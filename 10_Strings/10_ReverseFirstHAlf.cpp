@@ -1,0 +1,26 @@
+//WAP TO revrese only the first of even string
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+    string a = "Vishal";
+    int n=a.length();
+    cout<<a<<endl;
+    reverse(a.begin(), a.begin()+n/2);// reverse(a.begin(), a.end()-3);
+    cout<<a<<endl;
+
+
+
+    // int i=0;
+    // int j=a.length()/2-1;
+    // while(i<j){
+    //     int temp;
+    //     temp = a[i];
+    //     a[i]=a[j];
+    //     a[j]=temp;
+    //     i++;
+    //     j--;
+    // }
+    // cout<<a<<endl;
+    
+}
