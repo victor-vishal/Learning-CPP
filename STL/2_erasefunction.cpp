@@ -14,6 +14,7 @@ int main(){
     cout<<"Elements in vector: ";
     printVector(vec);
 
+    //ERASE FUNCTION changes the size of vector but not the capacity of vector.
     //erase function is used to remove elements from a vector.
     // syntax: vector_name.erase(iterator_position);
     vec.erase(vec.begin()); //removes the first element of vector.
