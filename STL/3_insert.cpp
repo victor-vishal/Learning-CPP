@@ -25,5 +25,15 @@ int main(){
     cout<<"Elements in vector after inserting 69 at index 5: ";
     printVector(vec);
 
+    vec.erase(vec.begin()+3); //removes the element at index 3.
+    cout<<"Elements in vector after removing element at index 3: ";
+    printVector(vec);
+
+    cout<<vec.empty()<<endl; //returns 0 if vector is not empty and 1 if vector is empty.
+    vec.clear(); //removes all the elements from vector.
+    cout<<vec.empty()<<endl; //return 1 since vector is empty after clear() function.
+
     return 0;
 }
+
+//insert and erase functions are very costly since they perform operations on the middle of the vector and require shifting of elements
