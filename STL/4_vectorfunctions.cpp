@@ -57,7 +57,8 @@ int main(){
     // cout<<vec.begin()<<endl; 
     //returns an 'iterator' class object, NOT a raw pointer.std::cout doesn't have a built-in rule to print iterator objects. 
     // to print address we can use data() function or get the value using dereferencing operator * and then use & to get the address of that value.
-
     cout<<"Address of first element: "<<&(*vec.begin())<<endl; 
+    //Third way it to use []
+    cout<<"Address of first element:" <<&vec[0]<<endl;
     return 0;
 }
