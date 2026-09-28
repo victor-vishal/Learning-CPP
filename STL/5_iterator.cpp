@@ -19,5 +19,23 @@ int main(){
         cout<<*(it)<<" ";
     }
 
+    // instead of declaring the iterator using vector<int>>::iterator or reverse_iterator, 
+    //we can use auto keyword to let the compiler decide the type of iterator.
+    //auto keyword allows the compiler to automatically deduce the type of variable using its initializer value.
+
+    //creating another iterterator
+    auto itr1 = vec.begin();
+    cout<<"\nPrinting vector using auto keyword\n";
+    for(itr1 = vec.begin(); itr1 != vec.end(); itr1++){
+        cout<<*(itr1)<<" ";
+    }
+
+    cout<<"\nPrinting vector using range based for loop using auto keyword\n";
+    //for(data_type variale : container) here container can be any STL container like vector, list, set, map etc.
+    for(auto itr2 : vec){
+        cout<<itr2<<" ";
+    }
+
+
     return 0;
 }
